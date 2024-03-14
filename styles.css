@@ -1,72 +1,64 @@
-* {
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    max-height: 0;
+    position: fixed; /* Fixa a barra de navegação no topo da página */
+    width: 100%; /* Define a largura da barra de navegação */
+    top: 0; /* Coloca a barra de navegação no topo */
+    z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um visual moderno */
+}
+
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
-body {
-    background-color: #000;
-    color: #fff;
+nav ul li {
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 4rem;
-    margin-top: 2rem;
-}
-
-p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 2rem;
-}
-
-.btn:hover {
-    background-color: #aaa;
-}
-
-.logo {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
     display: block;
-    margin: 0 auto;
-    max-width: 200px;
-    margin-top: 5rem;
+    transition: background-color 0.3s;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+nav ul li a:hover {
+    background-color: #8B0000;
 }
 
-footer a {
-    color: #8B0000;
-    text-decoration: none;
+/* Estilos para o ícone do menu */
+.menu-icon {
+    display: none;
 }
 
-footer img {
-    width: 30px;
-    vertical-align: middle;
-    margin-right: 5px;
+/* Estilos para o menu de navegação em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    /* Restante do código para o ícone do menu permanece igual */
+
+    nav ul {
+        flex-direction: column; /* Alterado para column para alinhar os itens verticalmente */
+        align-items: center; /* Centralizando os itens na vertical */
+    }
 }
