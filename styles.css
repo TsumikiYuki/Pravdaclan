@@ -1,40 +1,89 @@
-/* Estilos para o ícone do menu */
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    max-height: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #8B0000;
+}
+
+.menu-toggle:checked + nav {
+    max-height: 200px; /* Adjust the height as needed */
+}
+
 .menu-icon {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 9999;
+    display: none;
 }
 
-.menu-icon::before,
-.menu-icon::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: transform 0.4s;
-}
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 9999;
+    }
 
-.menu-icon::before {
-    transform: rotate(45deg);
-}
+    .menu-icon::before,
+    .menu-icon::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: transform 0.4s;
+    }
 
-.menu-icon::after {
-    transform: rotate(-45deg);
-}
+    .menu-icon::before {
+        transform: rotate(45deg);
+    }
 
-.menu-toggle:checked + .menu-icon::before {
-    transform: rotate(135deg);
-    margin-top: -1px;
-}
+    .menu-icon::after {
+        transform: rotate(-45deg);
+    }
 
-.menu-toggle:checked + .menu-icon::after {
-    transform: rotate(-135deg);
-    margin-top: 1px;
-}
+    .menu-toggle:checked + .menu-icon::before {
+        transform: rotate(135deg);
+        margin-top: -1px;
+    }
 
-/* Restante do código para o menu de navegação permanece o mesmo */
+    .menu-toggle:checked + .menu-icon::after {
+        transform: rotate(-135deg);
+        margin-top: 1px;
+    }
+}
