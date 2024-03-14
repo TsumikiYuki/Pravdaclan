@@ -16,7 +16,7 @@
             background-color: #333;
             overflow: hidden;
             transition: max-height 0.4s;
-            max-height: 200px; /* Alterado para 200px para facilitar visualização */
+            max-height: 0;
         }
 
         nav ul {
@@ -24,11 +24,10 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            display: flex; /* Alterado para flex para alinhar os itens horizontalmente */
-            justify-content: center; /* Centralizando os itens na horizontal */
         }
 
         nav ul li {
+            float: none;
             margin-right: 20px;
             margin-bottom: 10px;
         }
@@ -47,8 +46,8 @@
             background-color: #8B0000;
         }
 
-        .menu-toggle {
-            display: none; /* Removido o display para esconder o checkbox */
+        .menu-toggle:checked + nav {
+            max-height: 200px; /* Adjust the height as needed */
         }
 
         .menu-icon {
@@ -93,16 +92,6 @@
                 transform: rotate(-135deg);
                 margin-top: 1px;
             }
-
-            /* Mostrar o menu quando o checkbox estiver marcado */
-            .menu-toggle:checked + nav {
-                max-height: 100%; /* Alterado para 100% para mostrar todo o menu */
-            }
-
-            nav ul {
-                flex-direction: column; /* Alterado para column para alinhar os itens verticalmente */
-                align-items: center; /* Centralizando os itens na vertical */
-            }
         }
     </style>
 </head>
@@ -113,26 +102,26 @@
     <!-- Barra de navegação -->
     <nav>
         <ul>
-            <li><a href="2v2%20celestial">2v2 Celestial</a></li>
-            <li><a href="3x3%20pravda.html">3x3 Pravda</a></li>
-            <li><a href="3x3.html">3x3</a></li>
-            <li><a href="Historia%20da%20pravda.html">História da Pravda</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="fng%20multiverse%202.html">FNG Multiverse 2</a></li>
-            <li><a href="fng%20multiverse.html">FNG Multiverse</a></li>
-            <li><a href="membros/general.html">General</a></li>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="membros.html">Membros</a></li>
-            <li><a href="raio%20gores.html">Raio Gores</a></li>
-            <li><a href="regras.html">Regras</a></li>
-            <li><a href="tester.html">Tester</a></li>
-            <li><a href="world%20cup%20fng.html">World Cup FNG</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/2v2%20celestial">2v2 Celestial</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/3x3%20pravda.html">3x3 Pravda</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/3x3.html">3x3</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/Historia%20da%20pravda.html">História da Pravda</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/eventos.html">Eventos</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/fng%20multiverse%202.html">FNG Multiverse 2</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/fng%20multiverse.html">FNG Multiverse</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/membros/general.html">General</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/index.html">Página Inicial</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/membros.html">Membros</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/raio%20gores.html">Raio Gores</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/regras.html">Regras</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/tester.html">Tester</a></li>
+            <li><a href="https://github.com/TsumikiYuki/Pravdaclan/blob/main/world%20cup%20fng.html">World Cup FNG</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <h1>Bem-vindo à Pravda</h1>
-        <p>Um clan com o objetivo de criar uma comunidade que reúne todos os jogadores.</p>
+        <p>Um clan com o objetivo de criar uma comunidade que reúne todos jogadores</p>
         <a href="sobre.html" class="btn">Sobre nós</a>
         <a href="contato.html" class="btn">Contato</a>
         <img src="logo.png" alt="Logo da Pravda" class="logo">
