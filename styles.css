@@ -1,64 +1,40 @@
-/* Estilos para a barra de navegação */
-nav {
-    background-color: #333;
-    overflow: hidden;
-    transition: max-height 0.4s;
-    max-height: 0;
-    position: fixed; /* Fixa a barra de navegação no topo da página */
-    width: 100%; /* Define a largura da barra de navegação */
-    top: 0; /* Coloca a barra de navegação no topo */
-    z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um visual moderno */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-nav ul li {
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #8B0000;
-}
-
 /* Estilos para o ícone do menu */
 .menu-icon {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
 }
 
-/* Estilos para o menu de navegação em dispositivos móveis */
-@media screen and (max-width: 768px) {
-    .menu-icon {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 9999;
-    }
-
-    /* Restante do código para o ícone do menu permanece igual */
-
-    nav ul {
-        flex-direction: column; /* Alterado para column para alinhar os itens verticalmente */
-        align-items: center; /* Centralizando os itens na vertical */
-    }
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: transform 0.4s;
 }
+
+.menu-icon::before {
+    transform: rotate(45deg);
+}
+
+.menu-icon::after {
+    transform: rotate(-45deg);
+}
+
+.menu-toggle:checked + .menu-icon::before {
+    transform: rotate(135deg);
+    margin-top: -1px;
+}
+
+.menu-toggle:checked + .menu-icon::after {
+    transform: rotate(-135deg);
+    margin-top: 1px;
+}
+
+/* Restante do código para o menu de navegação permanece o mesmo */
