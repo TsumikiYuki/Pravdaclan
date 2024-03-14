@@ -16,7 +16,7 @@
             background-color: #333;
             overflow: hidden;
             transition: max-height 0.4s;
-            max-height: 0;
+            max-height: 200px; /* Alterado para 200px para facilitar visualização */
         }
 
         nav ul {
@@ -24,10 +24,11 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            display: flex; /* Alterado para flex para alinhar os itens horizontalmente */
+            justify-content: center; /* Centralizando os itens na horizontal */
         }
 
         nav ul li {
-            float: none;
             margin-right: 20px;
             margin-bottom: 10px;
         }
@@ -46,8 +47,8 @@
             background-color: #8B0000;
         }
 
-        .menu-toggle:checked + nav {
-            max-height: 200px; /* Adjust the height as needed */
+        .menu-toggle {
+            display: none; /* Removido o display para esconder o checkbox */
         }
 
         .menu-icon {
@@ -91,6 +92,16 @@
             .menu-toggle:checked + .menu-icon::after {
                 transform: rotate(-135deg);
                 margin-top: 1px;
+            }
+
+            /* Mostrar o menu quando o checkbox estiver marcado */
+            .menu-toggle:checked + nav {
+                max-height: 100%; /* Alterado para 100% para mostrar todo o menu */
+            }
+
+            nav ul {
+                flex-direction: column; /* Alterado para column para alinhar os itens verticalmente */
+                align-items: center; /* Centralizando os itens na vertical */
             }
         }
     </style>
