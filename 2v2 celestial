@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio Celestial 2v2 - Pravda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para esta página */
+        /* Adicione os estilos personalizados aqui */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_celestial_2v2.png" alt="Logo do Torneio 2x2 Celestial" />
+        <h1>Torneio Celestial 2v2 - Pravda</h1>
+    </header>
+
+    <section>
+        <h2>Descrição do Evento</h2>
+        <p>Bem-vindos à grandiosa arena do "Torneio Celestial 2v2"! Hoje, presenciamos um espetáculo divino, onde equipes excelentes de dois jogadores se enfrentaram em batalhas cósmicas para conquistar a medalha eterna...</p>
+
+        <h2>Resultados</h2>
+        <p>A batalha foi intensa entre as seguintes duplas:</p>
+        <ul>
+            <li>Tsumiki & Misty vs. Meliodas & Azul</li>
+        </ul>
+
+        <h2>Vencedores</h2>
+        <p>Parabéns à dupla vencedora:</p>
+        <ul>
+            <li><strong>Meliodas & Azul</strong></li>
+        </ul>
+
+        <p>A vitória deles ecoou nos reinos celestes! Agradecemos a todos os participantes por fazerem deste evento uma experiência única.</p>
+
+        <h2>Inscrições e Regras</h2>
+        <p>Para participar do torneio passado, bastava colocar o seu e o nick de seu parceiro no chat de inscrições. Caso não tivesse uma dupla, era possível indicar seu interesse, e outros jogadores poderiam formar equipes contigo...</p>
+        <p><strong>Regras:</strong></p>
+        <ol>
+            <li>Obviamente, não era permitido o uso de cheats, hacks, etc.</li>
+            <li>DYN permitida.</li>
+            <li>Não era permitido mais ou menos que 2 jogadores, como o nome sugeria, era um evento de 2 contra 2.</li>
+        </ol>
+
+        <p>As vagas foram fechadas no sábado passado às 20:00, e o evento começou no sábado anterior.</p>
+
+        <p>Em caso de dúvidas, mencionem no chat da Pravda!</p>
+    </section>
+
+    <footer>
+        <p>Surgiu o interesse de se tornar tester ou general? Visite as páginas explicando o processo.</p>
+        <div class="buttons">
+            <a href="#">Torne-se um Tester</a>
+            <a href="#">Candidatura para General</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
