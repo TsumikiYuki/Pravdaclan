@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial - Pravda</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Estilos específicos para o menu de navegação */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .navbar-list {
+            display: none;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .navbar-list a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar">
+    <!-- Barra de navegação -->
+    <div class="navbar" onclick="toggleNavbarList()">☰</div>
+    <div class="navbar-list" id="navbarList">
         <a href="pagina-inicial.html">Página Inicial</a>
         <a href="sobre.html">Sobre nós</a>
         <a href="contato.html">Contato</a>
@@ -36,5 +71,16 @@
             </a>
         </p>
     </footer>
+
+    <script>
+        function toggleNavbarList() {
+            var navbarList = document.getElementById("navbarList");
+            if (navbarList.style.display === "block") {
+                navbarList.style.display = "none";
+            } else {
+                navbarList.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
