@@ -1,12 +1,12 @@
-/* Estilo para a barra de navegação */
-.navbar-frame {
-    width: 100%;
-    height: 50px;
-    border: none;
-    margin: 0;
+
+/* Estilo para a lista de membros */
+.member-list {
+    margin: 0 auto; /* Centraliza a lista de membros */
+    max-width: 600px;
     padding: 0;
-    position: fixed;
-    top: 0;
-    z-index: 1000; /* Definido um z-index alto para garantir que a barra de navegação esteja acima de outros elementos */
-    overflow: hidden; /* Impede a rolagem da barra de navegação */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px; /* Adiciona um espaço igual à altura da barra de navegação */
 }
