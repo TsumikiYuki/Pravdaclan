@@ -1,3 +1,13 @@
+/* Estilo para o corpo da página */
+body {
+    background-color: black;
+    color: #7c2020;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0; /* Removido o padding e definido margem para 0 */
+}
+
 /* Estilo para a barra de navegação */
 .navbar-frame {
     width: 100%;
@@ -7,6 +17,7 @@
     padding: 0;
     position: fixed;
     top: 0;
+    z-index: 1000; /* Definido um z-index alto para garantir que a barra de navegação esteja acima de outros elementos */
 }
 
 .navbar {
@@ -55,4 +66,58 @@
 
 .navbar-item:hover .submenu {
     display: block;
+}
+
+/* Estilo para a lista de membros */
+.member-list {
+    margin: 70px auto; /* Adicionado um espaço para acomodar a barra de navegação */
+    max-width: 600px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para cada membro */
+.member {
+    margin: 10px;
+    padding: 20px;
+    background-color: #4c0000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a imagem de cada membro */
+.member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 4px white;
+}
+
+/* Estilo para o nome de cada membro */
+.member h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo para o cargo de cada membro */
+.member p {
+    font-size: 16px;
+    margin: 0;
+    color: #f2d9d9;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
