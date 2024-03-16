@@ -1,0 +1,42 @@
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333; /* Cor de fundo */
+    padding: 10px 0; /* Espaçamento interno (topo e baixo) */
+}
+
+/* Estilo para a lista de itens de navegação */
+.navbar ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento */
+    margin: 0; /* Remover margem */
+    text-align: center; /* Alinhar itens ao centro */
+}
+
+/* Estilo para cada item de navegação */
+.navbar ul li {
+    display: inline; /* Exibir itens em linha */
+}
+
+/* Estilo para links de navegação */
+.navbar ul li a {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (esquerda e direita) */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Estilo para links de navegação quando passar o mouse sobre eles */
+.navbar ul li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilo para links de navegação ativos (página atual) */
+.navbar ul li a.active {
+    background-color: #777; /* Cor de fundo ativa */
+}
+
+/* Estilo para links de navegação quando estiverem focados */
+.navbar ul li a:focus {
+    outline: none; /* Remover contorno */
+}
