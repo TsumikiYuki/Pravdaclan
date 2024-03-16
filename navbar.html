@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Membros da Pravda</title>
-    <link rel="stylesheet" href="navbar.css"> <!-- Vincular o arquivo CSS -->
-    <style>
-        /* Outros estilos permanecem aqui */
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação</title>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <ul>
-        <li><a href="2v2%20celestial">2v2 Celestial</a></li>
-        <li><a href="3x3%20pravda.html">3x3 Pravda</a></li>
-        <li><a href="3x3.html">3x3</a></li>
-        <li><a href="Historia%20da%20pravda.html">História da Pravda</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="fng%20multiverse%202.html">FNG Multiverse 2</a></li>
-        <li><a href="fng%20multiverse.html">FNG Multiverse</a></li>
-        <li><a href="membros/general.html">General</a></li>
-        <li><a href="index.html">Página Inicial</a></li>
-        <li><a href="membros.html">Membros</a></li>
-        <li><a href="raio%20gores.html">Raio Gores</a></li>
-        <li><a href="regras.html">Regras</a></li>
-        <li><a href="tester.html">Tester</a></li>
-        <li><a href="world%20cup%20fng.html">World Cup FNG</a></li>
+    <ul class="navbar-list">
+        <li class="navbar-item"><a href="#">Eventos</a>
+            <ul class="submenu">
+                <li><a href="2v2%20celestial.html">2v2 Celestial</a></li>
+                <li><a href="3x3%20pravda.html">3x3 Pravda</a></li>
+                <li><a href="3x3.html">3x3</a></li>
+                <li><a href="fng%20multiverse%202.html">FNG Multiverse 2</a></li>
+                <li><a href="fng%20multiverse.html">FNG Multiverse</a></li>
+                <li><a href="world%20cup%20fng.html">World Cup FNG</a></li>
+            </ul>
+        </li>
+        <li class="navbar-item"><a href="#">Membros</a>
+            <ul class="submenu">
+                <li><a href="membros/general.html">General</a></li>
+                <li><a href="tester.html">Tester</a></li>
+            </ul>
+        </li>
+        <li class="navbar-item"><a href="index.html">Página Inicial</a></li>
+        <li class="navbar-item"><a href="raio%20gores.html">Raio Gores</a></li>
+        <li class="navbar-item"><a href="regras.html">Regras</a></li>
     </ul>
 </nav>
 
-<!-- Restante do seu HTML continua abaixo -->
+<script src="navbar.js"></script>
+
+</body>
+</html>
