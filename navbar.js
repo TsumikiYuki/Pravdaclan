@@ -9,12 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                
+                // Rolagem para o topo da página antes de rolar para a seção desejada
                 window.scrollTo({
-                    top: offsetTop,
+                    top: 0,
                     behavior: 'smooth'
                 });
+
+                // Aguarda um pequeno intervalo antes de rolar para a seção desejada
+                setTimeout(() => {
+                    const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }, 100);
             }
         });
     });
