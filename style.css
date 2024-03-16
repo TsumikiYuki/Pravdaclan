@@ -1,87 +1,11 @@
-/* Estilo para o corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #ddd;
-    margin: 0;
+/* Estilo para a lista de membros */
+.member-list {
+    margin: 0 auto; /* Centraliza a lista de membros */
+    max-width: 600px;
     padding: 0;
-}
-
-/* Estilo para os cabeçalhos */
-h1, h2 {
-    color: #8B0000;
-    text-align: center;
-}
-
-/* Estilo para os parágrafos */
-p {
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Estilo para os links */
-a {
-    color: #8B0000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para os botões de ação */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    background-color: #8B0000;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #5a0000;
-}
-
-/* Estilo para os cabeçalhos das seções */
-section h2 {
-    color: #8B0000;
-}
-
-/* Estilo para as tabelas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th, table td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Estilo para a célula de vencedor nas tabelas */
-td.winner {
-    font-weight: bold;
-}
-
-/* Estilo para as imagens */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #8B0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px; /* Adiciona um espaço igual à altura da barra de navegação */
 }
