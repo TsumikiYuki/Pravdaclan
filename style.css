@@ -1,115 +1,87 @@
-/* style.css */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
+/* Estilo para o corpo da página */
 body {
-  background-color: #000;
-  color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+/* Estilo para os cabeçalhos */
+h1, h2 {
+    color: #8B0000;
+    text-align: center;
 }
 
-h1 {
-  font-size: 4rem;
-  margin-top: 2rem;
-}
-
+/* Estilo para os parágrafos */
 p {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-top: 2rem;
-  cursor: pointer;
+/* Estilo para os links */
+a {
+    color: #8B0000;
+    text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #aaa;
-  color: #fff;
+a:hover {
+    text-decoration: underline;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  max-width: 200px;
-  margin-top: 5rem;
+/* Estilo para os botões de ação */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #8B0000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
+.cta-button:hover {
+    background-color: #5a0000;
 }
 
-footer p {
-  margin-bottom: 15px;
+/* Estilo para os cabeçalhos das seções */
+section h2 {
+    color: #8B0000;
 }
 
-footer a {
-  color: #8b0000;
-  text-decoration: none;
+/* Estilo para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-footer img {
-  width: 30px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-/* Estilos para a barra de navegação */
-.navbar {
-  background-color: #333; /* Cor de fundo da barra de navegação */
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2; /* Cor do texto */
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: #ddd; /* Cor de fundo quando hover */
-  color: black; /* Cor do texto quando hover */
-}
-
-.navbar a.active {
-  background-color: #4CAF50; /* Cor de fundo do item ativo */
-  color: white; /* Cor do texto do item ativo */
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a {
-    float: none;
-    display: block;
+table th, table td {
+    padding: 8px;
     text-align: left;
-  }
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para a célula de vencedor nas tabelas */
+td.winner {
+    font-weight: bold;
+}
+
+/* Estilo para as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
