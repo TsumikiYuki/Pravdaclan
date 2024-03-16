@@ -1,42 +1,45 @@
-/* Estilo para a barra de navegação */
 .navbar {
-    background-color: #333; /* Cor de fundo */
-    padding: 10px 0; /* Espaçamento interno (topo e baixo) */
+    background-color: #333;
 }
 
-/* Estilo para a lista de itens de navegação */
-.navbar ul {
-    list-style: none; /* Remover marcadores de lista */
-    padding: 0; /* Remover preenchimento */
-    margin: 0; /* Remover margem */
-    text-align: center; /* Alinhar itens ao centro */
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* Estilo para cada item de navegação */
-.navbar ul li {
-    display: inline; /* Exibir itens em linha */
+.navbar-item {
+    float: left;
 }
 
-/* Estilo para links de navegação */
-.navbar ul li a {
-    text-decoration: none; /* Remover sublinhado padrão */
-    color: #fff; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno (esquerda e direita) */
-    transition: all 0.3s ease; /* Transição suave */
+.navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-/* Estilo para links de navegação quando passar o mouse sobre eles */
-.navbar ul li a:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-    border-radius: 5px; /* Borda arredondada */
+.navbar-item a:hover {
+    background-color: #111;
 }
 
-/* Estilo para links de navegação ativos (página atual) */
-.navbar ul li a.active {
-    background-color: #777; /* Cor de fundo ativa */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
 }
 
-/* Estilo para links de navegação quando estiverem focados */
-.navbar ul li a:focus {
-    outline: none; /* Remover contorno */
+.submenu li {
+    float: none;
+}
+
+.submenu a {
+    padding: 12px 16px;
+}
+
+.navbar-item:hover .submenu {
+    display: block;
 }
